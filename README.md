@@ -1,2 +1,2 @@
 # Database
-This is a website for designed for a fictional company.
+This is a website designed for a fictional company using HTML, PHP and MySQL. It has the functions of adding a new employee or deleting an old employee to the system and updating some information of employees. It also has the function of displaying some sepcific information for some employees, for example, the employees who are going to celebrate their birthdays this month. I hope you like this program, and I'll be grateful if you'd like to follow me on GitHub, thanks so much. 

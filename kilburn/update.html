@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Employee Details</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function validate_form() {
+      var x = document.forms["update_form"]["salary"].value;
+      if (x == null || x == ""){
+        alert ("Enter a name please!")
+        return false;
+      }
+    }
+
+
+</script>
+</head>
+<body>
+
+<div class = "container mt-3">
+  <h2>Kilburnazon Company</h2>
+  <br>
+  <u1 class = "nav nav-tabs nav-justified">
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "index.html">Register New</a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "update.html">Update Details</a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "delete.html">Delete Employee</a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "display.html">Display information</a>
+    </li>
+  </u1>
+
+  <div class="container"><br>
+    <b>Update employee's salary and emergency contact’s phone number.</b>
+    <div class="container mt-3">
+      <form name="update_form" action="service.php?cmd=update" method="post" onsubmit="return validate_form()">
+        <div class="row mt-3">
+            <div class="col-2 mt-1">Employee ID:</div>
+            <div class="col-6">
+              <input type="text" class="form-control" name="employee_id" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-2 mt-1">New salary(£):</div>
+            <div class="col-6">
+              <input type="number" class="form-control" min = "10" name="salary" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-2 mt-1">New emergency phone:</div>
+            <div class="col-6">
+              <input type="tel" class="form-control" name="emergency_phone" pattern="[0-9]*(\s[0-9]*)*" required>
+            </div>
+        </div>
+        <div class="row mt-5">
+          <button type="submit" class="btn btn-primary" style="width:200px;">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

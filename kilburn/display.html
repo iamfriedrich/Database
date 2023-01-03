@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Employees</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Kilburnazon Company</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Register new</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="update.html">Update details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="delete.html">Delete employee</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="display.html">Display employees</a>
+    </li>
+  </ul>
+
+  <div class="container"><br>
+    <p><a href="service.php?cmd=driver">Display all drivers whose emergency contact is their Father.</a></p><br>
+    <p><a href="service.php?cmd=birthday"> Displays all employees whose birthday is in the current calendar month.</a></p><br>
+    <p><a href="service.php?cmd=logs">Displays all employees who have been deleted.</a></p>
+  </div>
+
+
+</body>
+</html>
